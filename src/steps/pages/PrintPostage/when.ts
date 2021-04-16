@@ -1,6 +1,6 @@
 import { When } from '@cucumber/cucumber';
 
-//import clearInputField from '../support/action/clearInputField';
+import setSerialNumber from '../../../support/pages/PrintPostage/setSerialNumber';
 //import clickElement from '../support/action/clickElement';
 //import closeLastOpenedWindow from '../support/action/closeLastOpenedWindow';
 //import deleteCookies from '../support/action/deleteCookies';
@@ -20,18 +20,18 @@ import { When } from '@cucumber/cucumber';
 
 //When I set Print On to "Stamps"
 //When  I click on the button "[name='PrintMedia']"
-When(
-    /^I set Print On to "([^"]*)?"$/,
-    clickElement
-);
+//When(
+//    /^I set Print On to "([^"]*)?"$/,
+//    clickElement
+//);
 
 //When I set Serial Number to "C12345"
 //When  I set "C12345" to the inputfield "#sdc-mainpanel-nsserialtextfield-inputEl"
 When(
     /^I set Serial Number to "([^"]*)?"$/,
-    setInputField
+    setSerialNumber
 );
-
+/*
 //When I set Mail From ZIP to "94102"
 //When  I set "94102" to the inputfield "#unauthMailFromZip-1048-inputEl"
 When(
@@ -52,6 +52,6 @@ When(
     setCookie
 );
 
-
+*/
 
 

@@ -21,10 +21,6 @@ import isDisplayed from '../support/check/isDisplayed';
 import openWebsite from '../support/action/openWebsite';
 import setWindowSize from '../support/action/setWindowSize';
 
-Given(
-    /^I launch "([^"]*)?" browser$/,
-    function(){}
-);
 
 Given(
     /^I open the (url|site) "([^"]*)?"$/,
