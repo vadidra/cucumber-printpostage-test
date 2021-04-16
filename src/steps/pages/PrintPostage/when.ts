@@ -1,6 +1,7 @@
 import { When } from '@cucumber/cucumber';
 
 import setSerialNumber from '../../../support/pages/PrintPostage/setSerialNumber';
+import setMailFromZIP from '../../../support/pages/PrintPostage/setMailFromZIP';
 //import clickElement from '../support/action/clickElement';
 //import closeLastOpenedWindow from '../support/action/closeLastOpenedWindow';
 //import deleteCookies from '../support/action/deleteCookies';
@@ -26,19 +27,17 @@ import setSerialNumber from '../../../support/pages/PrintPostage/setSerialNumber
 //);
 
 //When I set Serial Number to "C12345"
-//When  I set "C12345" to the inputfield "#sdc-mainpanel-nsserialtextfield-inputEl"
 When(
     /^I set Serial Number to "([^"]*)?"$/,
     setSerialNumber
 );
-/*
+
 //When I set Mail From ZIP to "94102"
-//When  I set "94102" to the inputfield "#unauthMailFromZip-1048-inputEl"
 When(
     /^I set Mail From ZIP to "([^"]*)?"$/,
-    clearInputField
+    setMailFromZIP
 );
-
+/*
 //When I set Mail To Country to "Canada"
 //When  I click on the button "[name='ShipCountryCode']"
 When(

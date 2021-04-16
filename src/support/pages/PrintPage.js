@@ -70,18 +70,6 @@ class PrintPage {
         return $('[name="Service"]');
     }
 
-    //fillDescription(text){
-    //    this.descriptionInput.waitForExist();
-    //    this.descriptionInput.setValue(text);
-    //}
-
-    //printStamps(){
-    //    this.printStamps.click();
-    //}
-
-    //resultsTableIsVisible(){
-    //    this.resultsTable.waitForExist();
-    //}
 }
 
 export default new PrintPage()
