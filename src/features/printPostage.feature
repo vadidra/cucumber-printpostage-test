@@ -1,12 +1,11 @@
 Feature: Cucumber test
 
-    #Background:
-    #    Given I launch "chrome" browser
+    Background:
+        Given I launch "chrome" browser
 
     Scenario: Populate mail print form
         When I go to "https://print.stamps.com/Webpostage/default2.aspx?"
         Then I expect URL to contain "print.stamps.com"
-        
         When I set Print On to "Stamps"
         When I set Serial Number to "C12345"         
         When I set Mail From ZIP to "94102"

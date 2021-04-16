@@ -20,7 +20,12 @@ import isEnabled from '../support/check/isEnabled';
 import isDisplayed from '../support/check/isDisplayed';
 import openWebsite from '../support/action/openWebsite';
 import setWindowSize from '../support/action/setWindowSize';
+import launchBrowser from '../support/action/launchBrowser';
 
+Given(
+    /^I launch "([^"]*)?" browser$/,
+    launchBrowser
+);
 
 Given(
     /^I open the (url|site) "([^"]*)?"$/,
