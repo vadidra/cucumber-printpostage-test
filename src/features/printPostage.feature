@@ -17,6 +17,6 @@ Feature: Cucumber test
         
         #Then I expect that Weight lbs is "1"
         
-        #Then I set service to "Letter"
+        Then I set service to "Letter"
 
 

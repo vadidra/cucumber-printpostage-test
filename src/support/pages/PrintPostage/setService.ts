@@ -8,7 +8,7 @@ import checkIfElementExists from '../../lib/checkIfElementExists';
  */
 export default (value: string) => {
     
-    const selector1 = '[name="ShipCountryCode"]';
+    const selector1 = '[name="Service"]';
     const method1 = 'click';
 
     checkIfElementExists(selector1);
@@ -18,8 +18,8 @@ export default (value: string) => {
     browser.pause(1000);
 
 
-    $$('ul#boundlist-1378-listEl li').forEach(element => {
- 
+    $$('ul#boundlist-1367-listEl li').forEach(element => {
+        console.log(element.getText());
         if(element.getText()==value){
             element.moveTo();
             element.click()

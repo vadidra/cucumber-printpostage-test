@@ -1,7 +1,7 @@
 import { Then } from '@cucumber/cucumber';
 
 import checkWeightLbs from '../../../support/pages/PrintPostage/checkWeightLbs';
-import setServiceTo from '../../../support/pages/PrintPage';
+import setService from '../../../support/pages/PrintPostage/setService';
 
 //Then I expect that Weight lbs is "1"
 Then(
@@ -12,7 +12,7 @@ Then(
 //Then I set service to "Letter"
 Then(
     /^I set service to "([^"]*)?"$/,
-    setServiceTo
+    setService
 );
 
 
