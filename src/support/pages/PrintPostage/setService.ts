@@ -19,7 +19,7 @@ export default (value: string) => {
 
 
     $$('ul#boundlist-1367-listEl li').forEach(element => {
-        console.log(element.getText());
+
         if(element.getText()==value){
             element.moveTo();
             element.click()

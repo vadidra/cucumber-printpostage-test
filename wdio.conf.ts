@@ -158,7 +158,8 @@ export const config: WebdriverIO.Config = {
         // <string[]> (file/dir) require files before executing features
         require: [
             './src/steps/given.ts',
-            './src/steps/then.ts',
+            //'./src/steps/then.ts',
+            './src/steps/**/then.ts',
             './src/steps/**/when.ts',
             // Or search a (sub)folder for JS files with a wildcard
             // works since version 1.1 of the wdio-cucumber-framework

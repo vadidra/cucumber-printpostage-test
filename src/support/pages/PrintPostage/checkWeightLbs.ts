@@ -4,25 +4,22 @@
  *                                  expected value or not
  * @param  {Type}     expectedTitle The expected title
  */
-export default (falseCase: boolean, expectedWeight: number) => {
-    /**
-     * The title of the current browser window
-     * @type {String}
-     */
-    //const title = browser.getTitle();
-    const weight = 0;
+export default (falseCase: boolean, expectedWeightLbs: number) => {
+
+    $('[name="WeightLbs"]').waitForDisplayed();
+    const weightLbs = $('[name="WeightLbs"]').getValue();
 
     if (falseCase) {
-        expect(weight).not.toEqual(
-            expectedWeight,
+        expect(weightLbs).not.toEqual(
+            expectedWeightLbs,
             // @ts-expect-error
-            `Expected weight not to be "${expectedWeight}"`
+            `Expected weight not to be "${expectedWeightLbs}"`
         );
     } else {
-        expect(weight).toEqual(
-            expectedWeight,
+        expect(weightLbs).toEqual(
+            expectedWeightLbs,
             // @ts-expect-error
-            `Expected weight to be "${expectedWeight}" but found "${title}"`
+            `Expected weight to be "${expectedWeightLbs}" but found "${weightLbs}"`
         );
     }
 };
